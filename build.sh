@@ -34,7 +34,7 @@ FetchWebDev() {
 }
 
 FetchWebRelease() {
-  curl -L https://github.com/Lavernam/web-dist/releases/download/3.13.2/dist.tar.gz -o dist.tar.gz
+  curl -L https://github.com/Lavernam/web-dist/archive/refs/tags/3.13.2.tar.gz -o dist.tar.gz
   tar -zxvf dist.tar.gz
   rm -rf public/dist
   mv -f dist public
