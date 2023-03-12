@@ -123,14 +123,14 @@ MakeRelease() {
   cd ../..
 }
 
-if [ "$1" = "dev" ]; then
+if [ "$1" = "release" ]; then
   FetchWebDev
   if [ "$2" = "docker" ]; then
     BuildDocker
   else
     BuildDev
   fi
-elif [ "$1" = "release" ]; then
+elif [ "$1" = "dev" ]; then
   FetchWebRelease
   if [ "$2" = "docker" ]; then
     BuildDocker
